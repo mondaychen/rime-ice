@@ -13,7 +13,7 @@ schema:
     雾凇拼音
     https://github.com/iDvel/rime-ice
   dependencies:
-    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
+    #- melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
     - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
@@ -62,7 +62,7 @@ engine:
     - script_translator
     - lua_translator@date_translator      # 时间、日期、星期
     - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
-    - table_translator@melt_eng           # 英文输入
+    # - table_translator@melt_eng           # 英文输入
     - reverse_lookup_translator@liangfen  # 反查，两分拼字
     - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
